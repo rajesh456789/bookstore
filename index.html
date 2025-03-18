@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>My Bookstore</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to the Bookstore</h2>
+    <p>Your favorite place to find the best books!</p>
+  </section>
+
+  <section id="books">
+    <h2>Books Available</h2>
+    <div class="book-list">
+      <div class="book-item">
+        <img src="java.jpg" alt="Book 1">
+        <h3>java</h3>
+        <p>₹500</p>
+        <button class="add-to-cart" onclick="addToCart('Book Title 1', 15.99)">Add to Cart</button>
+        <button class="Buynow" onclick="Buynow('Book Title 3', 10.99)">Buynow</button>
+      </div>
+      <div class="book-item">
+        <img src="python.jpg" alt="Book 2">
+        <h3>python</h3>
+        <p>₹300</p>
+        <button class="add-to-cart" onclick="addToCart('Book Title 2', 20.99)">Add to Cart</button>
+        <button class="Buynow" onclick="Buynow('Book Title 3', 10.99)">Buynow</button>
+      </div>
+      <div class="book-item">
+        <img src="dbms.jpg" alt="Book 3">
+        <h3>dbms</h3>
+        <p>₹450</p>
+        <button class="add-to-cart" onclick="addToCart('Book Title 3', 10.99)">Add to Cart</button>
+        <button class="Buynow" onclick="Buynow('Book Title 3', 10.99)">Buynow</button>
+      </div>
+      <div class="book-item">
+        <img src="html.jpg" alt="Book 3">
+        <h3>html</h3>
+        <p>₹350</p>
+        <button class="add-to-cart" onclick="addToCart('Book Title 3', 10.99)">Add to Cart</button>
+        <button class="Buynow" onclick="Buynow('Book Title 3', 10.99)">Buynow</button>
+      </div>
+      <div class="book-item">
+        <img src="css.jpg" alt="Book 3">
+        <h3>css</h3>
+        <p>₹375</p>
+        <button class="add-to-cart" onclick="addToCart('Book Title 3', 10.99)">Add to Cart</button>
+        <button class="Buynow" onclick="Buynow('Book Title 3', 10.99)">Buynow</button>
+      </div>
+      <div class="book-item">
+        <img src="RDMS.jpg" alt="Book 3">
+        <h3>css</h3>
+        <p>₹375</p>
+        <button class="add-to-cart" onclick="addToCart('Book Title 3', 10.99)">Add to Cart</button>
+        <button class="Buynow" onclick="Buynow('Book Title 3', 10.99)">Buynow</button>
+      </div>
+      <div class="book-item">
+        <img src="reasoning.png" alt="Book 3">
+        <h3>Reasoning</h3>
+        <p>₹500</p>
+        <button class="add-to-cart" onclick="addToCart('Book Title 3', 10.99)">Add to Cart</button>
+        <button class="Buynow" onclick="Buynow('Book Title 3', 10.99)">Buynow</button>
+      </div>
+     
+
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items">
+      <p>No items in cart</p>
+    </div>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Bookstore. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
